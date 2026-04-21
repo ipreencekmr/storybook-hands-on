@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Card, type CardProps } from './Card';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { Card } from './Card';
 
 const meta = {
   title: 'Components/Card',

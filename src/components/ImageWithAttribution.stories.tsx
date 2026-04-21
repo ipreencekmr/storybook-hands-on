@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { ImageWithAttribution, type ImageWithAttributionProps } from './ImageWithAttribution';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { ImageWithAttribution } from './ImageWithAttribution';
 
 const meta = {
   title: 'Components/ImageWithAttribution',

@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { AnimatedSidebar, type AnimatedSidebarProps } from './AnimatedSidebar';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { AnimatedSidebar } from './AnimatedSidebar';
 
 const meta = {
   title: 'Components/AnimatedSidebar',

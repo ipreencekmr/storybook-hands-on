@@ -51,9 +51,12 @@ describe('AnimatedSidebar Component', () => {
   });
 
   it('shows status message based on open state', () => {
-    const { rerender } = render(<AnimatedSidebar title="Menu" items={mockItems} defaultOpen={true} />);
+    render(<AnimatedSidebar title="Menu" items={mockItems} defaultOpen={true} />);
     expect(screen.getByText(/The sidebar is currently open/i)).toBeInTheDocument();
-    rerender(<AnimatedSidebar title="Menu" items={mockItems} defaultOpen={false} />);
+
+    const toggleButton = screen.getByRole('button', { name: /toggle sidebar/i });
+    fireEvent.click(toggleButton);
+
     expect(screen.getByText(/The sidebar is now collapsed/i)).toBeInTheDocument();
   });
 

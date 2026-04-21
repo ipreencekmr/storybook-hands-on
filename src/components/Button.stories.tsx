@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Button, type ButtonProps } from './Button';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { Button } from './Button';
 
 const meta = {
   title: 'Components/Button',
